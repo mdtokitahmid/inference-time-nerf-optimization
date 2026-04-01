@@ -1,0 +1,6 @@
+logs/
+gifs/
+__pycache__/
+*.pyc
+*.out
+*.err
