@@ -14,9 +14,7 @@ Scenes available: bouncingballs, hellwarrior, hook, jumpingjacks, lego, mutant, 
 
 Usage:
     cd /scratch/gpfs/MONA/Toki/Academic/COS526/K-Planes
-    PYTHONPATH='.' /scratch/gpfs/MONA/mt3204/envs/kplanes/bin/python \
-        /scratch/gpfs/MONA/Toki/Academic/COS526/final_experiments/infer.py \
-        --scene mutant --n-steps 50 --lr 0.05 --n-rays 2048
+    PYTHONPATH='.' /scratch/gpfs/MONA/mt3204/envs/kplanes/bin/python /scratch/gpfs/MONA/Toki/Academic/COS526/final_experiments/infer.py --scene mutant --n-steps 50 --lr 0.05 --n-rays 2048
 """
 
 import argparse, os, sys, json
