@@ -10,21 +10,6 @@ using only pixels and known camera poses (no ground-truth timestamps at inferenc
 3. For each test image, optimize a single scalar `t = tanh(t_raw)` via Adam to minimize pixel reconstruction MSE
 4. Evaluate recovered timestamps against GT using Spearman correlation
 
-## Results Summary
-
-| Scene         | Train PSNR (dB) | Spearman ρ | Mean \|t err\| |
-|---------------|----------------|-----------|---------------|
-| bouncingballs | 39.10          | 0.341     | 0.467         |
-| hellwarrior   | 24.83          | −0.143    | 0.730         |
-| hook          | 27.54          | 0.113     | 0.473         |
-| jumpingjacks  | 31.35          | −0.220    | 0.871         |
-| lego          | 25.37          | 0.253     | 0.512         |
-| mutant        | 31.84          | **0.788** | 0.192         |
-| standup       | 32.22          | **0.785** | 0.174         |
-| trex          | 30.27          | −0.287    | 0.844         |
-
-Works well for scenes with monotonic non-repetitive motion (mutant, standup).
-Fails for periodic/symmetric motion (jumpingjacks, trex) due to multiple local minima.
 
 ## Setup
 
